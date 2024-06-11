@@ -2,10 +2,9 @@
 
 :root{
     --primary-color:#B8860B;
-    --background: #000;
+    --background: steelblue; /* Changed to steel blue */
     --text-color: #fff;
 }
-
 *{
     font-family: 'Open Sans', sans-serif;
     margin:0; padding:0;
