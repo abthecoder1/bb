@@ -2,7 +2,7 @@
 
 :root{
     --primary-color:#B8860B;
-    --background: steelblue; /* Changed to steel blue */
+    --background: DarkSlateGray; /* Changed to steel blue */
     --text-color: #fff;
 }
 *{
