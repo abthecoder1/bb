@@ -507,5 +507,11 @@ header .navbar ul li a:hover{
         width:100%;
     }
     
-   
+.social-icon{
+color: #ADD8E6;
+transition: color 0.2s;
+}
+.social-icon:hover{
+    #696969
+        }
 }
