@@ -1,88 +1,118 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Home</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <a href="https://storyset.com/online">Online illustrations by Storyset</a>
-    <style>
-        .image img {
-            background: transparent;
-        }
-    </style>
+
 </head>
 <body>
     
 <!-- header section starts  -->
+
 <header>
-    <h1 class="heading">home</h1>
+
+    <h1 class="heading">Home</h1>
+
     <div id="menu" class="fas fa-bars"></div>
+
     <nav class="navbar">
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="aboutus.html">About</a></li>
-            <li><a href="contactus.html">Contact</a></li>
-            <li><a href="awareness.html">Awareness</a></li>
-            <li><a href="principlesofhumancomputerinteraction.html">Principles of Human Computer Interaction</a></li>
-            <li><a href="principlesofwebsitedevelpoment.html">Principles of Wesbite Development</a></li>
+        <ul id="navMenu">
+            <li><a href="contactus.html" onclick="togglemenu()">Contact Page</a></li>
+            <li><a href="aboutus.html" onclick="togglemenu()">About Us Page</a></li>
+            <li><a href="awareness.html" onclick="togglemenu()">Awareness Page</a></li>
+            <li><a href="principlesofhci.html" onclick="togglemenu()">Principles of Human Computer Interaction</a></li>
+            <li><a href="principlesofwebdev.html" onclick="togglemenu()">Principles of Website Development</a></li>
         </ul>
     </nav>
+
 </header>
+
 <!-- header section ends -->
 
 <!-- home section starts   -->
+
 <section class="home">
+
     <div class="content">
-        <h1>Its coming home</h1>
-        <p>This is the homepage, the central point to the blog!</p>
-        <a href="https://abthecoder1.github.io/bb/home.html"><button class="btn">get started</button></a>
+        <h1>Welcome to the Homepage</h1>
+        <p>This is the Homepage, the central point to the blog</p>
+        <a href="principlesofwebdev.html"><button class="btn">Start Reading!</button></a>
     </div>
+
     <div class="image">
         <img src="picture_trial.png" alt="Photo">
     </div>
+
 </section>
+
 <!-- home section ends -->
 
 <!-- footer section starts  -->
+
 <div class="footer">
+
     <div class="box-container">
+
         <div class="box">
             <h3>Social Media</h3>
             <a class="social-icon" href="https://x.com/problogger?lang=en" target="_blank">
-                <ion-icon name="logo-twitter"></ion-icon>
-            </a>
+                <ion-icon name="logo-twitter"></ion-icon> </a>
         </div>
+
         <div class="box">
             <h3>quick links</h3>
-            <a href="home.html">home</a>
-            <a href="aboutus.html">about us</a>
-            <a href="contactus.html">contact us</a>
-            <a href="awareness.html">awareness</a>
-            <a href="principlesofhumancomputerinteraction.html">principles of human computer interaction</a>
-            <a href="principlesofwebsitedevelpoment.html">principles of website development</a>
+            <a href="contactus.html">Contact Page</a>
+            <a href="aboutus.html">About Page</a>
+            <a href="awareness.html">Awareness</a>
+            <a href="principlesofhci.html">Principles Of Human Computer Interaction</a>
+            <a href="principlesofwebdev.html">Principles of Website Development</a>
         </div>
+
         <div class="box">
-            <h3>newspaper</h3>
+            <h3>newsletter</h3>
             <p>subscribe us for latest updates</p>
             <form action="">
                 <input type="email" placeholder="your email">
                 <input type="submit" class="btn" value="subscribe">
             </form>
         </div>
+
     </div>
-    <h1 class="credit"> created by <a href="#">aaron</a> | all rights reserved. </h1>
+
+    <h1 class="credit"> created by <a href="#">mr. aaron</a> | Nice page aint it?. </h1>
+
 </div>
+
 <!-- footer section ends -->
 
 <!-- ionicons script -->
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    
+
+
 <!-- jquery cdn link  -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
 
+ <!-- Menu Functionality  -->
+
+ <script>
+    function toggleMenu() {
+        var menuToggle = document.getElementById('menu');
+        var navMenu = document.getElementById('navMenu');
+
+        menuToggle.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    }
+</script>
 </body>
 </html>
